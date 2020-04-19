@@ -1,238 +1,39 @@
 ﻿<!DOCTYPE html>
-<!-- informar ao navegador que o documento encontra-se em formato HTML -->
 <html lang="pt-br">
-<!-- Define o início dá página HTML e em qual idioma será criado, neste caso, Português-Brasil -->
 	<head>
-	<!-- Define o início do cabeçalho dá página HTML -->
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-		<!-- O IE não suporta Doctype para HTML5. Isso força o IE a usar as definições de CSS mais recentes -->
 		<meta charset="utf-8" />
-		<!--
-		Informa ao navegador que estamos usando caracteres Unicode para exibir acentos e cedilha
-		/> Self Clese: Fechamento da tag na mesma linha.
-		-->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<!-- Normaliza os estilos padronizados em todos os navegadores (não reseta) -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Faz o site ocupar todo o espaço disponível na janela dos celulares, tablets ou PC’s. -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
-		<!-- Visualiza seu site com uma determinada fonte online, mesmo que a fonte não exista no seu PC. -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
-		<!-- Linka o index.html ao estilo externo "estilo.css" que esá dentro da pasta css. -->
-		<!-- Avisa ao navegador que ele deve procurar um documento situado fora da página HTML. -->
 		<title>GPD - Informática</title>
-		<!-- 
-		Exite o título da página HTML na aba do navegador
-
-		Obs: Na Homepage do site sempre utilize o título da seguinte forma:
-		<titulo>Nome do site - ou | Descrição do site (ou slogan)</titulo> (Sempre colocar traço - ou barra | )
-		
-		Obs: Nas demais páginas a ordem se inverte. Posts, categorias ou listagens, você usa da seguinte forma:
-		<titulo>Título ou artigo do post - ou | Nome do site</titulo>  (Sempre colocar o traço - ou a barra | )
-	 	-->
 		<meta name="GPD Informática" content="Manutenção de computadores e notebooks, suporte técnico em hardware e software, servidores, redes de computadores e desenvolvimento web." />
-		<!--  
-		<meta name="description" content="content" />
-		
-		"description" é a descrição da nossa página perante um buscador e deve ser única na página.
-		"content" é a descrição completa do conteúdo da sua página com um limite de 156 caracteres. 
-		
-		Obs: As metatags para otimização em "SOU", elas sempre vão utilizar:
-		<meta name="conteúdo" content="conteúdo" />
-
-		Obs: Em algumas tags <meta>, você pode definir 2 atributos.
-	 	-->
 	 	<meta name="keywords" content="manutenção, computador, notebook, suporte, hardware, software, servidores, redes, desenvolvimento, web" />
-		<!-- Sempre utilize palavras chaves que tenham relação com o que a sua página exibe. -->
 		<meta name="author" content="Dawidson Pereira" />
-		<!-- O nome de quem criou essa página. -->
 	</head>
-	<!-- Define o final do cabeçalho dá página HTML -->
 	<body>
-	<!-- Define o início do conteúdo dá página HTML -->
-		<!-- 
-		<blockquote>
-			<p>Serve para fazer citações, ou seja, pegar frases, textos, artigos ou trechos de um outro site ou de um outro autor e colocar dentro do seu artigo ou do seu post.</p>
-			Obs.: A citação já dá um espaço similar a uma tabulação no início da citação.
-		</blockquote>
- 		-->
 		<div class="header">
-			<!-- 
-			É uma caixa, um box de conteúdo utilizado para agrupar elementos dentro de uma mesma seção.
-			Muito úteis na confecção dos layouts e pra você agrupar seções do seu site.
-			-->
 			<div class="linha">
-				<!-- 
-				É uma caixa, um box de conteúdo utilizado para agrupar elementos dentro de uma mesma seção.
-				Muito úteis na confecção dos layouts e pra você agrupar seções do seu site.
-				-->
 				<header>
-				<!-- O header (cabeçalho) se repete em todas as páginas do site. -->
 					<div class="coluna col4">
-					<!-- 
-					A maioria dos sistemas de grid utilizam 12 colunas.
-					
-					O grid deve ter uma largura máxima de 960px e 12 colunas.
-					960/12 = 80 px, sendo:
-					
-					60px	Cada coluna
-					10px	Espaçamento à esquerda entre cada coluna
-					10px	Espaçamento à direita entre cada coluna
-					====
-					80px	Total
-
-					Grid é a largura máxima da maioria dos sites.
-
-					Toda vez que criar uma linha, ela precisa ter 12 colunas.
-
-					Exemplo 1:
-					Se eu criar uma <div class="coluna col1"></div>, na outra coluna eu
-					tenho que criar <div class="coluna col11"></div>, pq 1 + 11 = 12 colunas.
-
-					Exemplo 2:
-					Se eu criar uma <div class="coluna col4"></div>, na outra coluna eu
-					tenho que criar <div class="coluna col8"></div>, pq 4 + 8 = 12 colunas.
-
-					Exemplo 3:
-					Se eu criar uma <div class="coluna col5"></div>, na outra coluna eu
-					tenho que criar <div class="coluna col7"></div>, pq 5 + 7 = 12 colunas.
-
-					Exemplo 4:
-					Se eu criar uma <div class="coluna col12"></div>, não preciso criar a outra,
-					pq já terei as 12 colunas.
-
-					No estilo.css será informado o tamanho de cada coluna, totalizando 960px.
-					-->
 						<h1 class="logo">GPD - Informática</h1>
-						<!--
-						<h1> Tag de título.
-						A tag de título <h1> só deve ser usada uma vez na sua página.
-						As tags <h2>, <h3>, etc, podem ser usadas várias vezes.
-
-						Obs.: Na Homepage use a tag <h1> somente uma vez e sempre no nome do site.
-						
-						Nas demais páginas, use a tag <h1> somente uma vez na informação mais importante.
-
-						Regra básica das Tags HTML
-						<tag atributo="valor">Conteúdo da tag</tag>
-
-						OBS: Não se preocupe com o tamanho da fonte. O CSS pode igualar tamanhos de h1 até h6.
-						-->
 					</div>
 					<div class="coluna col8">
 						<nav>
-						<!-- O nav (Menu de Navegação) se repete em todas as páginas do site. -->
 							<ul id=menu>
-							<!-- Menu fixo centralizado à direita -->
 								<li><a href="index.html">Home</a>
 								<li><a href="clientes.html">Clientes</a>
 								<li><a href="servicos.html">Serviços</a>
 								<li><a href="sobre.html">Sobre</a>
 								<li><a href="contato.html">Contato</a>
 							</ul>
-
 							<ul class="menu inline sem-marcador">
-							<!--
-							Nessa ul foi colocada 3 classes: menu inline sem-marcador.
-							ul com a classe inline: class inline mostra em linha
-							Mostrar os menus um ao lado do outro (e não, um abaixo do outro)
-							-->
 								<li><a href="index.html">home</a></li>
 								<li><a href="clientes.html">clientes</a></li>
 								<li><a href="servicos.html">serviços</a></li>
 								<li><a href="sobre.html">sobre</a></li>
 								<li><a href="contato.html">contato</a></li>
-								
-								<!-- 
-								<li> Item de lista (list item)
-								<ul> Lista não ordenada (unordered list)
-								<ol> Lista ordenada (ordered list)
-								<dl> Lista de definição (definition list)
-								<dt> Termo de definição (definition term)
-								<dd> Dados de definição (definition data)
-
-								Obs.: As listas não são usadas somente para listar ítens, mas também
-								para montar elementos de layout de navegação.
-	 							-->
-
-	 							<!--      
-								<a href="">Texto do link</a>
-								A tag <a href=""> serve para criar links.
-
-								Só a tag <a href="">Texto do link</a> cria um link para algum lugar.
-								Obs: O cursor do mouse vira uma "mãozinha"
-
-								<a href="listas.html">Texto do link</a>
-								Dentro de <a href=""> você define para onde o link vai te levar.
-								Obs: Abre o "listas.html" na mesma aba do navegador.
-								(O mouse em cima do link mostra o caminho no rodapé esquerdo do navegador.)
-
-								<a href="listas.html" target="_self">Texto do link</a>
-								O atributo target"_self" abre o "listas.html" na mesma aba do navegador.
-
-								<a href="listas.html" target="_blank">Texto do link</a>
-								O atributo target"_blank" abre o "listas.html" em nova aba do navegador.
-								Obs: Linkar para páginas internas.
-
-								<a href="http://rbtech.info/" target="_blank">Site RBtech</a>
-								O atributo target"_blank" abre o site RBtech em nova aba do navegador.
-								Obs: Linkar para sites externos.
-
-								<a href="http://rbtech.info/" target="_blank" title="Acesso ao site do RBtech">Site RBtech</a>
-								O atributo title="" coloca o título desse link.
-
-								Obs: Quando você colocar o mouse sobre esse link, será exibida a mensagem definida no title como uma informação adicional, facilitando a navegabilidade dentro do seu site.
-								
-								<a href="https://www.gpdinformatica.com.br/" target="_blank"/> <img src="img/gpdinformatica.jpg" title="Acesso ao site GPD Informática" width="100" height="100" border="0" alt="GPD Informática">
-								Obs.: Imagem como link.
-								Oba: Não colocar width="100" height="100" border="0" (Usar CSS)
-								-->
-
-								<!-- 
-								<a href="">Texto do link</a> <a name="">Texto do link</a>
-								A tag <a name="">Texto do link</a> no final, em uma página grande e com bastante conteúdo, rola a navegação até determinado ponto da mesma página.
- 								-->
-
-								<!-- 
-								<a href="pagina1.html">Página 1</a> | <a href="pagina2.html">Página 2</a> |
-								<a href="pagina3.html">Página 3</a> | <a href="pagina4.html">Página 4</a> |
-
-								Você pode usar a Barra para separar visualmente as páginas.
-
-								Resultado: Página 1 | Página 2 | Página 3 | Página 4 |
-								-->
-
-								<!-- 
-								Entrar e sair de diretório
-
-								<a href="pages/pagina1.html">Página 1</a>
-								Entra no diretório "pages" e visualiza o conteúdo de "pagina1.html"
-
-								<a href="../index.html">Voltar</a>
-								Volta para a homepage "index.html" que está no diretório anterior.
-								-->
-
-								<!--  				 								
-								<img src="img/imagem1.jpg" alt="ícone" />
-								Obs: É fundamental e obrigatório a tag alt nas suas imagens.
-									 Em SOU, também é muito útil para a otimização em motores de busca.
-
-								<img src="img/imagem1.jpg" target="_blank" title="Acesso ao site do RBtech" alt="ícone" />
-
-								O atributo title="" coloca o título desse link.
-
-								Obs: Quando você colocar o mouse sobre esse link, será exibida a mensagem definida no title como uma informação adicional, facilitando a navegabilidade dentro do seu site.
-
-								<a href="https://www.gpdinformatica.com.br/" target="_blank"/> <img src="img/gpdinformatica.jpg" title="Acesso ao site GPD Informática" width="100" height="100" border="0" alt="GPD Informática">
-								Obs.: Imagem como link.
-
-								<img src="http://hardware.rbtech.info/wp-content/blogs.dir/6/files/2019/07/guia-compras-notebooks-300x180.jpg" alt="ícone" />
-								Obs.: Nunca link diretamente uma imagem de outro site na sua página.
-								Prática ilegal, antiética e consumindo recursos de um servidor.
-								Essa prática é chamada de "Hotlink"
-
-								Obs.: Sempre copie a imagem para dentro de uma pasta no seu computador.
-								-->
 							</ul>
 						</nav>
 					</div>
@@ -241,12 +42,9 @@
 		</div>
 		<div class="linha">
 			<section>
-			<!-- As lista devem estar dentro de uma section que devem conter ítens de h1 a h6. -->
 				<div class="coluna col3 sidebar">
 					<h3>Clientes satisfeitos</h3>
 					<ul class="sem-marcador sem-padding">
-					<!-- Sem marcador sem preenchimento -->
-					<!-- <ul> Lista não ordenada -->
 						<li><a href="">Nome da Empresa 1</a></li>
 						<li><a href="">Nome da Empresa 2</a></li>
 						<li><a href="">Nome da Empresa 3</a></li>
@@ -254,20 +52,14 @@
 						<li><a href="">Nome da Empresa 5</a></li>
 						<li><a href="">Nome da Empresa 6</a></li>
 						<li><a href="">Nome da Empresa 7</a></li>
-						<!-- <li> Items de uma lista -->
 					</ul>
 					<a href="clientes.html" class="botao">Ver todos &raquo;</a>
-					<!-- &raquo; caracter especial do HTML, setinha dupla  >>  -->
 				</div>
 				<div class="coluna col9">
 					<h2>Último trabalho: <em>Empresa ABC</em></h2>
-					<!-- <em> uma espécie de itálico -->
 					<img src="img/thumb-grande.jpg" alt="" />
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />Quaerat voluptates, corporis, hic itaque maiores beatae odio veritatis, perferendis vitae delectus eaque repellendus iure quae quasi id tenetur nihil porro ipsum.</p>
-					<!-- <p></p> Tag parágrafo -->
-					<!-- <br /> Tág quebra de linha com self close-->
 					<a href="clientes.html" class="botao">Ver outros trabalhos &raquo;</a>
-					<!-- &raquo; caracter especial do HTML, setinha dupla  >>  -->
 				</div>
 			</section>
 		</div>
@@ -275,7 +67,6 @@
 			<div class="linha">
 				<div class="coluna col7">
 					<section>
-					<!-- As lista devem estar dentro de uma section que devem conter ítens de h1 a h6. -->
 						<h2>Como um site pode ajudar sua empresa?</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea in ipsum, ullam dolores magni itaque, ad.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea in ipsum, ullam dolores magni itaque, ad.</p>
@@ -285,27 +76,20 @@
 				<div class="coluna col5">
 					<h3>Últimas notícias</h3>
 					<ul>
-					<!-- <ul> Lista não ordenada -->
 						<li>
-						<!-- <li> Items de uma lista -->
 							<img src="img/thumb-pequena.jpg" alt="" />
 							<h4>Título da notícia publicada no blog</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, modi, nesciunt. Esse necessitatibus dolores at veniam reiciendis molestias praesentium! <a href="">Leia mais &raquo;</a></p>
-							<!-- &raquo; caracter especial do HTML, setinha dupla  >>  -->
 						</li>
 						<li>
-						<!-- <li> Items de uma lista -->
 							<img src="img/thumb-pequena.jpg" alt="" />
 							<h4>Título da notícia publicada no blog</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, modi, nesciunt. Esse necessitatibus dolores at veniam reiciendis molestias praesentium! <a href="">Leia mais &raquo;</a></p>
-							<!-- &raquo; caracter especial do HTML, setinha dupla  >>  -->
 						</li>
 						<li>
-						<!-- <li> Items de uma lista -->
 							<img src="img/thumb-pequena.jpg" alt="" />
 							<h4>Título da notícia publicada no blog</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, modi, nesciunt. Esse necessitatibus dolores at veniam reiciendis molestias praesentium! <a href="">Leia mais &raquo;</a></p>
-							<!-- &raquo; caracter especial do HTML, setinha dupla  >>  -->
 						</li>
 					</ul>
 				</div>
@@ -316,25 +100,15 @@
 				<footer>
 					<div class="coluna col4">
 						<span>&copy; Copyright 2020     GPD - Informática</span>
-						<!--
-						&copy; caracter especial do HTML, Copyright
-						Após 2020 tem 5 expaços com as teclas ALT 255 (espaço diferenciado)
-						-->
 					</div>
 					<div class="coluna col4">
 						<span>Cel/Whatsapp: (81) 9 9959-5743  (Tim)</span>
 					</div>
 					<div class="coluna col4">
 						<span>E-mail:  dawidsongru@gmail.com</span>
-					<!--
-					Rodapé com
-					3 colunas col4 = 12 colunas, mas também poderia ser
-					1 coluna col12 = 12 colunas.
-					-->
 					</div>
 				</footer>
 			</div>
 		</div>
 	</body>
-	<!-- Define o final dá página HTML -->
 </html>
